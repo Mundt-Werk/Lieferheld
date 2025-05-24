@@ -24,7 +24,7 @@ Mein erstes Projekt mit DOM-Manipulation, Eventhandling und dynamischer Preislog
 
 ## 🚀 Vorschau
 
-*(Optional: Später Screenshot oder GIF hier einfügen)*
+![Lieferheld Screenshot](./img/pizza.png)
 
 ---
 
