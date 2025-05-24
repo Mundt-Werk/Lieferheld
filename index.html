@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lieferheld.de</title>
+  <link rel="icon" type="image/x-icon" href="./img/smalllogo.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="./data.js" defer></script>
+  <script src="./script.js" defer></script>
+</head>
+
+<body id="body" onload="init()">
+  <header>
+    <img class="mainpage_logo_big" src="./img/lieferheldlogo.png" alt="brandLogo" />
+    <img class="mainpage_logo_small" src="./img/smalllieferheldlogo.png" alt="brandLogo" />
+    <h1>Speisekarte</h1>
+    <div class="dishQuantity">
+    <p id="mark" class="d_none">!</p>
+    <img onclick="cancelShoppingCart()" id="shop" class="shop_logo" src="./img/icon/cart4.svg" alt="burgerMenuLogo" />
+    </div>
+  </header>
+
+  <div class="order_page">
+    <div class="menu_page">
+      <div class="brand_header_img">
+        <img src="./img/header.png" alt="peterParkerPizzaHeader" />
+      </div>
+      <div class="brand_name">
+        <h2>Peter Parker Pizza</h2>
+        <img src="./img/vote.png" alt="rating" />
+      </div>
+
+      <hr />
+
+      <div class="normal_pizza_menu">
+        <img src="./img/pizzanormal.jpg" alt="pizzaPicture" />
+        <h3>Pizza</h3>
+        <div id="pizzaContainer"></div>
+      </div>
+
+      <div class="normal_pizza_menu">
+        <img src="./img/pizzaveggie.jpg" alt="pizzaPicture" />
+        <h3>Vegetarische Pizza</h3>
+        <div id="vegetarContainer"></div>
+      </div>
+
+      <div class="normal_pizza_menu">
+        <img src="./img/pizzacalzone.png" alt="pizzaPicture" />
+        <h3>Pizza Calzone</h3>
+        <div id="calzoneContainer"></div>
+      </div>
+
+      <div class="normal_pizza_menu">
+        <img src="./img/drinks.png" alt="pizzaPicture" />
+        <h3>Getränke</h3>
+        <div id="drinkContainer"></div>
+      </div>
+
+      <div class="impressum_card">
+        <div class="impressum_headline">
+          <img src="./img/icon/spider-solid.svg" alt="ImpressumIcon" />
+          <h4>Impressum</h4>
+        </div>
+        <div class="impressum_info">
+          <p>Marco Mundt handelt im Namen von Peter Parker Pizza</p>
+          <p>Marvel Straße 7</p>
+          <p>51065 Köln</p>
+          <p>Fax: +492421488822</p>
+          <br />
+
+          <p>Plattform der EU-Kommission zur Online-Streitbeilegung:</p>
+          <a target="_blank" href="https://ec.europa.eu/consumers/odr">https://ec.europa.eu/consumers/odr</a>
+
+          <hr />
+
+          <p>
+            Wir sind ein professioneller Anbieter. Erfahre mehr darüber, wie
+            wir gemeinsam mit Lieferheld.de die Verbraucherverantwortung
+            übernehmen.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="cancelShoppingCart" class="shopping_cart_big d_none">
+      <div class="shopping_cart_headline">
+        <h4>Warenkorb</h4>
+        <img src="./img/time.png" alt="" />
+      </div>
+
+      
+        <div id="deliveryContainer" class="ready_to_delivery">
+        </div>
+        <div id="payContainer">
+        </div>
+      
+      
+      <div id="deliveryPlaceholder" class="delivery_truck">
+        <img src="./img/icon/truck-fast-solid.svg" alt="deliveryTruck" />
+        <h4>Fülle deinen Warenkorb</h4>
+        <p>
+          Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle
+          dein Essen.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer_links cursor_none">
+      <a href="">Ein Restaurant empfehlen</a>
+      <a href="">Ein Restaurant anmelden</a>
+      <a href="">Jobs</a>
+      <a href="">AGB</a>
+      <a href="">Datenschutzerklärung</a>
+      <a href="">Impressum</a>
+      <a href="">Verwendung von Cookies</a>
+      <a href="">Bug Bounty</a>
+      <a href="">Ethik-Hotline</a>
+    </div>
+    <div>
+      <p>© 2024 Lieferheld.de</p>
+    </div>
+  </footer>
+
+  <div id="thankYou" class="thank_you_container d_none">
+    <div class="thank_you_text">
+      <p>Vielen Dank <br> für Deine Bestellung</p>
+    </div>
+  </div>
+</body>
+
+</html>
+
